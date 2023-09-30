@@ -35,6 +35,7 @@ namespace Trabajo_Integrador_Laboratorio_Clculadora
             txtPrimerOperador.Text = null;
             txtSegundoOperador.Text = null;
             lblResultado.Text = "Resultado:";
+
         }
 
         private void FrmCalculadora_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,7 +52,7 @@ namespace Trabajo_Integrador_Laboratorio_Clculadora
         {
             if (!System.Text.RegularExpressions.Regex.IsMatch(txtPrimerOperador.Text, "^[\\-]?[0-9]{0,7}([\\.][0-9][0-9])?$"))
             {
-                MessageBox.Show("Ingrese solo numeros");
+                MessageBox.Show("Erorr");
                 txtPrimerOperador.Text = string.Empty;
             }
         }
@@ -60,7 +61,7 @@ namespace Trabajo_Integrador_Laboratorio_Clculadora
 
             if (!System.Text.RegularExpressions.Regex.IsMatch(txtSegundoOperador.Text, "^[\\-]?[0-9]{0,7}([\\.][0-9][0-9])?$"))
             {
-                MessageBox.Show("Ingrese solo numeros");
+                MessageBox.Show("Error");
                 txtSegundoOperador.Text = string.Empty;
             }
         }
