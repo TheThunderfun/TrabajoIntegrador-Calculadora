@@ -61,8 +61,8 @@ namespace Trabajo_Integrador_Laboratorio_Clculadora
 
             if (!System.Text.RegularExpressions.Regex.IsMatch(txtSegundoOperador.Text, "^[\\-]?[0-9]{0,15}([\\.][0-9][0-9])?$"))
             {
-                MessageBox.Show("Error");
-                txtSegundoOperador.Text = string.Empty;
+                MessageBox.Show("Error"); 
+                txtSegundoOperador.Text =  string.Empty;
             }
         }
 
