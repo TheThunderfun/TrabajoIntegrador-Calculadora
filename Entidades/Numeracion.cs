@@ -93,28 +93,11 @@
 
         private static string DecimalABinario(string valor)
         {
-            bool numInvalido=false;
-            if (valor == null)
+            if (valor[0] == '-' || valor == null)
             {
-                return "Numero Invalido";
+                return "Numero invalido";
             }
-            foreach (char c in valor)
-            {
-                if (c == '-' || c == '.')
-                {
-                    numInvalido = true;
-                }
-            }
-
-            if(numInvalido == true)
-            {
-                return DecimalABinario((int)Convert.ToInt64(valor));
-            }
-            else
-            {
-                return "Numero Invalido";
-            }
-            
+            return DecimalABinario((int)Convert.ToInt64(valor));
         }
 
 
