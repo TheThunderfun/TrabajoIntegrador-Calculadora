@@ -50,7 +50,7 @@ namespace Trabajo_Integrador_Laboratorio_Clculadora
 
         private void txtPrimerOperador_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(txtPrimerOperador.Text, "^[\\-]?[0-9]{0,7}([\\.][0-9][0-9])?$"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtPrimerOperador.Text, "^[\\-]?[0-9]{0,15}([\\.][0-9][0-9])?$"))
             {
                 MessageBox.Show("Erorr");
                 txtPrimerOperador.Text = string.Empty;
@@ -59,7 +59,7 @@ namespace Trabajo_Integrador_Laboratorio_Clculadora
         private void txtSegundoOperador_TextChanged(object sender, EventArgs e)
         {
 
-            if (!System.Text.RegularExpressions.Regex.IsMatch(txtSegundoOperador.Text, "^[\\-]?[0-9]{0,7}([\\.][0-9][0-9])?$"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtSegundoOperador.Text, "^[\\-]?[0-9]{0,15}([\\.][0-9][0-9])?$"))
             {
                 MessageBox.Show("Error");
                 txtSegundoOperador.Text = string.Empty;
