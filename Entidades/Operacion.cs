@@ -47,10 +47,5 @@ namespace Entidades
                     return new Numeracion(Convert.ToDouble(primerOperando.valor) + Convert.ToDouble(segundoOperando.valor), Numeracion.ESistema.Decimal);
             }   
         }
-
-
-
-
-
     }
 }
